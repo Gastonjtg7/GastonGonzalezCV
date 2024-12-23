@@ -1,11 +1,63 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
+		<style>
+        /* Estilos para el video de fondo */
+        #video-fondo {
+            position: fixed; /* Fija el video */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cubre todo el fondo */
+            z-index: 0; /* Detrás del contenido */
+        }
+
+        .experiencia-container {
+    margin-top: 2em; /* Espacio superior para separar del encabezado */
+}
+
+.experiencia {
+    margin-bottom: 2em; /* Espacio entre las experiencias */
+    padding: 1.5em; /* Añade un poco de padding dentro de cada experiencia */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.info-empresa {
+    margin-bottom: 1em; /* Espacio entre la info de la empresa y las responsabilidades */
+}
+
+.empresa {
+    font-weight: bold;
+    display: block; /* Para que ocupe una línea completa */
+}
+
+.periodo {
+    font-style: italic;
+    color: #777; /* Color grisáceo para el periodo */
+}
+
+.responsabilidades {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.responsabilidades li {
+    margin-bottom: 0.5em;
+}
+
+/*Para que la imagen se adapte al contenedor*/
+.image.main img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita espacios extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+    </style>
+
 		<title>Experiencia Gastón González</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -16,6 +68,10 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+				<video autoplay muted loop playsinline id="video-fondo">
+        <source src="video-de-fondo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
 
 				<!-- Header -->
 					<header id="header">
@@ -42,71 +98,58 @@
 
 						<!-- Post -->
 							<section class="post">
-								<header class="major">
-									<span class="date">Trayectoria profesional</span>
-									<h1>Experiencia <br />
-									Destacada</h1>
-									<p>Soy Gastón González, un apasionado de la tecnología con una sólida experiencia en soporte técnico. A lo largo de mi carrera, he desarrollado habilidades en una amplia gama de tecnologías, incluyendo Plataformas en la Nube, Sistemas operativos, Directorios Activos, Bases de Datos, Herramientas de virtualización, Redes, Herramientas de Help Desk y Scripting.</p>
-								</header>
-								<div class="image main"><img src="images/pic10.jpg" alt="" /></div>
-								<p><strong>Técnico de Soporte de IT en PRACTIA</strong></p><p><em>Marzo 2024 - Actualidad</em><br><p>Un puesto de Help Desk de nivel 1 y 2 en <em><strong>SUMMUM Medicina Privada</strong></em> donde las tareas incluyen mantenimiento y control de la infraestructura, se realiza desarrollo en pequeña escala, manejo de tickets, se aplican conocimientos en Office 365, Microsoft Azure (Servicios de Informática en la Nube), Windows Server, Active Directory, Aplicaciones (Genexus, aplicaciones web, entre muchas más), Networking, Servidores On Premise y Cloud (DNS, AD, File Server, Print Server, Virtual Servers, DHCP), Reparación y diagnosticos de computadoras, cableado, impresoras (Epson, HP y Samsung), Scripting y telefonía VoIP (servicio 3CX).</p>
-								<p><strong>Técnico de Soporte de TI en ICAL S.A.</strong></p><p><em>Septiembre 2023 - Marzo 2024</em><br><p> Un puesto de Help Desk de nivel 1 y 2 en reconocido banco <em><strong>BANDES URUGUAY</strong></em>, donde las tareas incluyen mantenimiento y control de la infraestructura, manejo de tickets, Active Directory, administración de servidores y soporte técnico general. Se aplican conceptos como Microsoft Windows Server (DNS, AD, File Server, Print Server, Virtual Servers, DHCP), virtualización en VMware, redes IT (Switches, Routers, Firewalls, LAN, WAN), telefonía IP (Cisco) y conocimientos en bases de datos (SQL, DB2, MySQL).</p>
-							</section>
+    <header class="major">
+        <span class="date">Trayectoria profesional</span>
+        <h1>Experiencia Destacada</h1>
+        <p>Soy Gastón González, un apasionado de la tecnología con una sólida experiencia en soporte técnico. A lo largo de mi carrera, he desarrollado habilidades en una amplia gama de tecnologías, incluyendo Plataformas en la Nube, Sistemas operativos, Directorios Activos, Bases de Datos, Herramientas de virtualización, Redes, Herramientas de Help Desk y Scripting.</p>
+    </header>
+    <div class="image main"><img src="images/pic10.jpg" alt="" /></div>
 
+    <div class="experiencia-container">
+       <section class="experiencia-laboral">
+    <h2>Experiencia Profesional</h2>
+    <div class="experiencia-container">
+        <article class="experiencia">
+            <h3>Técnico de Soporte IT Nivel 1 y 2</h3>
+            <div class="info-empresa">
+                <span class="empresa">SUMMUM Medicina Privada</span>
+                <span class="periodo">Marzo 2024 - Actualidad</span>
+            </div>
+            <ul class="responsabilidades">
+                <li>Proporcioné soporte técnico integral (remoto y presencial) a usuarios finales, resolviendo incidencias de hardware, software y redes, con un enfoque en la satisfacción del usuario y la resolución efectiva de problemas.</li>
+                <li>Gestioné eficientemente tickets de soporte mediante herramientas de Help Desk en Zohodesk, priorizando y escalando según la urgencia, mejorando la eficiencia del equipo.</li>
+                <li>Mantuve y controlé la infraestructura tecnológica (servidores Windows Server, redes LAN/WAN, equipos de usuario), asegurando su óptimo funcionamiento, la alta disponibilidad de los servicios y minimizando las interrupciones.</li>
+                <li>Desarrollé y ejecuté scripts en PowerShell y Bash para automatizar tareas repetitivas, optimizando procesos, mejorando la eficiencia del equipo de soporte.</li>
+                <li>Administré y configuré Microsoft 365 y servicios de Microsoft Azure (Computación en la Nube), implementando soluciones que mejoraron la colaboración, la productividad y la seguridad de la información.</li>
+                <li>Administré servidores Windows Server, incluyendo Active Directory, DNS, File Server, Print Server, Virtual Servers (VMware vSphere) y DHCP, garantizando la disponibilidad, seguridad y el rendimiento óptimo de los servicios de red.</li>
+                <li>Brindé soporte a aplicaciones empresariales como Genexus y diversas aplicaciones web, resolviendo incidencias técnicas, capacitando a los usuarios y documentando soluciones para la base de conocimiento.</li>
+                <li>Realicé diagnóstico y reparación de hardware (computadoras, impresoras Epson, HP, Samsung) y cableado de redes, asegurando el correcto funcionamiento de los equipos y la conectividad de la red.</li>
+                <li>Adquirí experiencia inicial en el manejo de bases de datos SQL Server, MySQL, PostgreSQL a través de tareas de soporte y consulta.</li>
+                <li>Administré la telefonía VoIP utilizando 3CX, configurando extensiones, enrutamiento de llamadas, solucionando problemas técnicos y optimizando la comunicación interna.</li>
+            </ul>
+        </article>
+
+        <article class="experiencia">
+            <h3>Técnico de Soporte IT Nivel 1 y 2</h3>
+            <div class="info-empresa">
+                <span class="empresa">BANDES URUGUAY</span>
+                <span class="periodo">Septiembre 2023 - Marzo 2024</span>
+            </div>
+            <ul class="responsabilidades">
+                <li>Proporcioné soporte técnico a usuarios finales en un entorno bancario crítico, resolviendo más de 500 tickets de soporte en 7 meses, garantizando la continuidad operativa de los servicios y demostrando alta capacidad de respuesta ante incidentes.</li>
+                <li>Gestioné tickets de soporte utilizando un sistema de ticketing de ServiceNow, resolviendo eficientemente incidencias de hardware y software, cumpliendo con los SLAs establecidos y priorizando la satisfacción del cliente interno.</li>
+                <li>Administré Active Directory y servidores Windows Server (DNS, AD, File Server, Print Server, Virtual Servers, DHCP), implementando políticas de seguridad y garantizando la disponibilidad y el rendimiento óptimo de los recursos de la red.</li>
+                <li>Brindé soporte a la telefonía IP utilizando equipos Cisco (ej: Cisco Unified Communications Manager).</li>
+                <li>Adquirí experiencia inicial en el manejo de bases de datos SQL Server, MySQL, PostgreSQL a través de tareas de soporte y consulta.</li>
+            </ul>
+        </article>
+    </div>
+</section>
 					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Nombre</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email   🖂</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Mensaje  💬</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Enviar Mensaje  📨" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location 🌎</h3>
-								<p>Uruguay<br />
-								Montevideo</p>
-							</section>
-							<section>
-								<h3>Phone 📱</h3>
-								<p><a href="#">+598 091843685</a></p>
-							</section>
-							<section>
-								<h3>Email 📧</h3>
-								<p><a href="#">gastonjtg@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="mailto:gastonjtg@gmail.com" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
-									<li><a href="https://linkedin.com/in/gaston-gonzalez-iraeta" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://wa.me/091843685" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; 2024 Gastón González Iraeta</li><li>Todos los derechos reservados</li></ul>
 					</div>
 
 			</div>
